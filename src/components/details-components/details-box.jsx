@@ -6,7 +6,7 @@ const weaponBackgrounds = require.context('../../assets/images/details/weapon-ba
 const characterDetailsThumbs = require.context('../../assets/images/details/characters')
 const weaponDetailsThumbs = require.context('../../assets/images/details/weapons')
 export default function DetailsBox(props) {
-  const {src, title, isWeapon, element} = props
+  const {src, alias, title, isWeapon, element} = props
   return (
     <Col
     xs="12"
@@ -23,7 +23,7 @@ export default function DetailsBox(props) {
         </Col>
         <Col xs="8">
           <h5 className="text-white text-capitalize">
-            {title}
+            {alias}
           </h5>
           <hr className="text-white"/>
         </Col>

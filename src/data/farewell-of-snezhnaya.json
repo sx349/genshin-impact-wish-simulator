@@ -1,6 +1,7 @@
 [
   {
     "name": "Tartaglia",
+	"alias": "达达利亚",
     "element": "Hydro",
     "type": "character",
     "rating": 5,
@@ -10,6 +11,7 @@
   },
   {
     "name": "Keqing",
+	"alias": "刻晴",
     "element": "Electro",
     "type": "character",
     "rating": 5,
@@ -19,6 +21,7 @@
   },
   {
     "name": "Mona",
+	"alias": "莫娜",
     "element": "Hydro",
     "type": "character",
     "rating": 5,
@@ -28,6 +31,7 @@
   },
   {
     "name": "Qiqi",
+	"alias": "七七",
     "element": "Cryo",
     "type": "character",
     "rating": 5,
@@ -37,6 +41,7 @@
   },
   {
     "name": "Diluc",
+	"alias": "迪卢克",
     "element": "Pyro",
     "type": "character",
     "rating": 5,
@@ -46,6 +51,7 @@
   },
   {
     "name": "Jean",
+	"alias": "琴",
     "element": "Anemo",
     "type": "character",
     "rating": 5,
@@ -55,6 +61,7 @@
   },
   {
     "name": "Diona",
+	"alias": "迪奥娜",
     "element": "Cryo",
     "type": "character",
     "rating": 4,
@@ -64,6 +71,7 @@
   },
   {
     "name": "Ningguang",
+	"alias": "凝光",
     "element": "Electro",
     "type": "character",
     "rating": 4,
@@ -74,6 +82,7 @@
   },
   {
     "name": "Beidou",
+	"alias": "北斗",
     "element": "Electro",
     "type": "character",
     "rating": 4,
@@ -84,6 +93,7 @@
   },
   {
     "name": "Sucrose",
+	"alias": "砂糖",
     "element": "Anemo",
     "type": "character",
     "rating": 4,
@@ -93,6 +103,7 @@
   },
   {
     "name": "Chongyun",
+	"alias": "重云",
     "element": "Cryo",
     "type": "character",
     "rating": 4,
@@ -102,6 +113,7 @@
   },
   {
     "name": "Noelle",
+	"alias": "诺艾尔",
     "element": "Geo",
     "type": "character",
     "rating": 4,
@@ -111,6 +123,7 @@
   },
   {
     "name": "Bennett",
+	"alias": "班尼特",
     "element": "Pyro",
     "type": "character",
     "rating": 4,
@@ -120,6 +133,7 @@
   },
   {
     "name": "Fischl",
+	"alias": "菲谢尔",
     "element": "Electro",
     "type": "character",
     "rating": 4,
@@ -129,6 +143,7 @@
   },
   {
     "name": "Xingqiu",
+	"alias": "行秋",
     "element": "Hydro",
     "type": "character",
     "rating": 4,
@@ -138,6 +153,7 @@
   },
   {
     "name": "Xiangling",
+	"alias": "香菱",
     "element": "Pyro",
     "type": "character",
     "rating": 4,
@@ -147,6 +163,7 @@
   },
   {
     "name": "Razor",
+	"alias": "雷泽",
     "element": "Electro",
     "type": "character",
     "rating": 4,
@@ -156,6 +173,7 @@
   },
   {
     "name": "Barbara",
+	"alias": "芭芭拉",
     "element": "Hydro",
     "type": "character",
     "rating": 4,
@@ -165,6 +183,7 @@
   },
   {
     "name": "Rust",
+	"alias": "弓藏",
     "rating": 4,
     "class": "Bow",
     "src": "rust.png",
@@ -172,6 +191,7 @@
   },
   {
     "name": "Sacrificial Bow",
+	"alias": "祭礼弓",
     "rating": 4,
     "class": "Bow",
     "src": "sacrificial-bow.png",
@@ -179,6 +199,7 @@
   },
   {
     "name": "The Stringless",
+	"alias": "绝弦",
     "rating": 4,
     "class": "Bow",
     "src": "the-stringless.png",
@@ -186,6 +207,7 @@
   },
   {
     "name": "Favonius Warbow",
+	"alias": "西风猎弓",	
     "rating": 4,
     "class": "Bow",
     "src": "favonius-warbow.png",
@@ -193,6 +215,7 @@
   },
   {
     "name": "Eye of Perception",
+	"alias": "昭心",
     "rating": 4,
     "class": "Catalyst",
     "src": "eye-of-perception.png",
@@ -200,6 +223,7 @@
   },
   {
     "name": "Sacrificial Fragments",
+	"alias": "祭礼残章",
     "rating": 4,
     "class": "Catalyst",
     "src": "sacrificial-fragments.png",
@@ -207,6 +231,7 @@
   },
   {
     "name": "The Widsith",
+	"alias": "流浪乐章",
     "rating": 4,
     "class": "Catalyst",
     "src": "the-widsith.png",
@@ -214,6 +239,7 @@
   },
   {
     "name": "Favonius Codex",
+	"alias": "西风秘典",
     "rating": 4,
     "class": "Catalyst",
     "src": "favonius-codex.png",
@@ -221,6 +247,7 @@
   },
   {
     "name": "Favonius Lance",
+	"alias": "西风长枪",
     "rating": 4,
     "class": "Lance",
     "type": "weapon",
@@ -228,6 +255,7 @@
   },
   {
     "name": "Dragon's Bane",
+	"alias": "匣里灭辰",
     "rating": 4,
     "class": "Polearm",
     "src": "dragons-bane.png",
@@ -235,6 +263,7 @@
   },
   {
     "name": "Rainslasher",
+	"alias": "雨裁",
     "rating": 4,
     "type": "weapon",
     "class": "Claymore",
@@ -242,14 +271,15 @@
   },
   {
     "name": "Sacrificial Greatsword",
+	"alias": "祭礼大剑",
     "rating": 4,
     "type": "weapon",
     "class": "Sword",
-    "isFeatured": true,
     "src": "sacrificial-greatsword.png"
   },
   {
     "name": "The Bell",
+ 	"alias": "钟剑",
     "rating": 4,
     "class": "Claymore",
     "src": "the-bell.png",
@@ -257,6 +287,7 @@
   },
   {
     "name": "Favonius Greatsword",
+	"alias": "西风大剑",
     "rating": 4,
     "class": "Claymore",
     "src": "favonius-greatsword.png",
@@ -264,13 +295,15 @@
   },
   {
     "name": "Lions Roar",
+	"alias": "匣里龙吟",
     "rating": 4,
-    "type": "weapon",
     "class": "Sword",
-    "src": "lions-roar.png"
+    "src": "lions-roar.png",
+    "type": "weapon"
   },
   {
     "name": "Sacrificial Sword",
+	"alias": "祭礼剑",
     "rating": 4,
     "class": "Sword",
     "src": "sacrificial-sword.png",
@@ -278,6 +311,7 @@
   },
   {
     "name": "The Flute",
+	"alias": "笛剑",
     "rating": 4,
     "class": "Sword",
     "src": "the-flute.png",
@@ -285,6 +319,7 @@
   },
   {
     "name": "Favonius Sword",
+	"alias": "西风剑",
     "rating": 4,
     "class": "Sword",
     "src": "favonius-sword.png",
@@ -292,6 +327,7 @@
   },
   {
     "name": "Slingshot",
+ 	"alias": "弹弓",
     "rating": 3,
     "class": "Bow",
     "src": "slingshot.png",
@@ -299,6 +335,7 @@
   },
   {
     "name": "Sharpshooter's Oath",
+	"alias": "神射手之誓",
     "rating": 3,
     "class": "Bow",
     "src": "sharpshooters-oath.png",
@@ -306,79 +343,90 @@
   },
   {
     "name": "Raven Bow",
+ 	"alias": "鸦羽弓",	
     "rating": 3,
     "class": "Bow",
-    "src": "raven-bow.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "raven-bow.png"
   },
   {
-    "name": "Emerald Orb",
+    "name": "Jade Orb",
+ 	"alias": "翡玉法球",	
     "rating": 3,
-    "type": "weapon",
     "class": "Catalyst",
-    "src": "emerald-orb.png"
+    "type": "weapon",
+    "src": "jade-orb.png"
   },
   {
     "name": "Thrilling Tales of Dragon Slayers",
+	"alias": "讨龙英杰谭",	
     "rating": 3,
     "class": "Catalyst",
-    "src": "thrilling-tales-of-dragon-slayers.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "thrilling-tales-of-dragon-slayers.png"
   },
   {
     "name": "Magic Guide",
+	"alias": "魔导绪论",	
     "rating": 3,
     "class": "Catalyst",
-    "src": "magic-guide.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "magic-guide.png"
   },
   {
     "name": "Black Tassel",
+	"alias": "黑缨枪",	
     "rating": 3,
     "class": "Polearm",
-    "src": "black-tassel.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "black-tassel.png"
   },
   {
     "name": "Debate Club",
+	"alias": "以理服人",	
     "rating": 3,
     "class": "Claymore",
-    "src": "debate-club.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "debate-club.png"
   },
   {
     "name": "Bloodtainted Greatsword",
+	"alias": "沐浴龙血的剑",	
     "rating": 3,
     "class": "Claymore",
-    "src": "bloodtainted-greatsword.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "bloodtainted-greatsword.png"
   },
   {
     "name": "Ferrous Shadow",
+	"alias": "铁影阔剑",	
     "rating": 3,
     "class": "Claymore",
-    "src": "ferrous-shadow.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "ferrous-shadow.png"
   },
   {
     "name": "Skyrider Sword",
+	"alias": "飞天御剑",	
     "rating": 3,
     "class": "Sword",
-    "src": "skyrider-sword.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "skyrider-sword.png"
   },
   {
     "name": "Harbinger of Dawn",
+	"alias": "黎明神剑",	
     "rating": 3,
     "class": "Sword",
-    "src": "harbinger-of-dawn.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "harbinger-of-dawn.png"
   },
   {
     "name": "Cool Steel",
+	"alias": "冷刃",	
     "rating": 3,
     "class": "Sword",
-    "src": "cool-steel.png",
-    "type": "weapon"
+    "type": "weapon",
+    "src": "cool-steel.png"
   }
 ]

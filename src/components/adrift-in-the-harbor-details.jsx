@@ -15,98 +15,101 @@ export default function AdriftInTheHarborDetails() {
     <div className="details pt-5">
       <Container>
         <Title>
-          <h1>| Event Wish "<span className="blue">Adrift</span> in the Harbor"</h1>
+          <h1>| 活动祈愿「<span className="blue">浮生</span>孰来」</h1>
         </Title>
         <SubheadingSeparator
-          content="Increased Drop Rates!"
+          content="祈愿获取概率大幅提升！"
         />
         <StarsBar
           starCount={5}
-          content="Percentage of 5-Star Item Drops：50.000%"
+          content="当祈愿获取到5星角色时，有50.000%的概率为"
           bgColor="#dcbba5"
         />
         <Row>
           <DetailsBox
             title={'ganyu'}
+			alias={'甘雨'}
             isWeapon={false}
             element={'cryo'}
           />
         </Row>
         <StarsBar
           starCount={4}
-          content="Percentage of 4-Star Item Drops：50.000%"
+          content="当祈愿获取到4星物品时，有50.000%的概率为"
           bgColor="#b6abbf"
         />
         <Row>
           <DetailsBox
             title={'noelle'}
+			alias={'诺艾尔'}
             isWeapon={false}
             element={'geo'}
           />
           <DetailsBox
             title={'xingqiu'}
+			alias={'行秋'}
             isWeapon={false}
             element={'water'}
           />
           <DetailsBox
             title={'xiangling'}
+			alias={'香菱'}
             isWeapon={false}
             element={'pyro'}
           />
         </Row>
         <SubheadingSeparator
-          content="Wish Details"
+          content="祈愿详情"
         />
         <EventDurationHeading
-          content="Limited Time Event"
+          content="限时活动"
         />
         <Row>
           <Col xs="12">
             <p className="my-3">
-              Event Wish "<span className="blue">Adrift</span> in the Harbor" is now available. During this event wish, the <span className="orange">event-exclusive</span> 5-star character <span className="aqua">"Plenilune Gaze" Ganyu (Cryo)</span> as well as 4-star characters <span className="brass">"Chivalric Blossom" Noelle (Geo)</span>, <span className="aqua">"Juvenile Galant" Xingqiu (Hydro)</span>, and <span className="orange">"Exquisite Delicacy" Xiangling (Pyro)</span> will get a <span className="orange">huge drop-rate boost</span>!
+              「<span className="blue">浮生</span>孰来」活动祈愿已开启。活动期间内，<span className="orange">限定</span>5星角色<span className="aqua">「循循守月· 甘雨(冰)」</span>以及4星角色<span className="brass">「未授勋之花·诺艾尔(岩)」</span>、<span className="aqua">「少年春衫薄·行秋(水)」</span>、<span className="orange">「万民百味·香菱(火)」</span>的祈愿获取概率将<span className="orange">大幅提升</span>！
               <br/>
-              <span className="orange">※ Of the above characters, the event-exclusive character will not be available in the standard wish "Wanderlust Invocation".</span>
+              <span className="orange">※以上角色中，限定角色不会进入「奔行世间」常驻祈愿。</span>  
             </p>
             <p className="my-3">
-              〓Rules〓
+              〓祈愿规则〓
             </p>
             <p className="my-3">
-              5-Star Items
+              【5星物品】
             </p>
             <p className="my-3">
-              For Event Wish "<span className="blue">Adrift</span> in the Harbor": Base probability of winning 5-star character = <span className="orange">0.600%</span>; consolidated probability (incl. guarantee) = <span className="orange">1.600%</span>; guaranteed to win 5-star character at least once per <span className="orange">90</span> attempts.
-              The first time you win a 5-star item in this event wish, there is a <span className="orange">50.000%</span> chance it will be the promotional character <span className="aqua">"Plenilune Gaze" Ganyu (Cryo)</span>. If the first 5-star character you win in this event wish is not the promotional character, then the next 5-star character you win is <span className="orange">guaranteed</span> to be the promotional character.
+              在本期「<span className="blue">浮生</span>孰来」活动祈愿中，5星角色祈愿的基础概率为<span className="orange">0.600%</span>，综合概率（含保底）为<span className="orange">1.600%</span>，最多<span className="orange">90</span>次祈愿内必定能通过保底获取5星角色。
+              当祈愿获取到5星角色时，有<span className="orange">50.000%</span>的概率为本期UP角色<span className="aqua">「循循守月· 甘雨(冰)」</span>。如果本次祈愿获取的5星角色非本期UP角色，下次祈愿获取的5星角色<span className="orange">必定</span>为本期5星UP角色。
             </p>
             <p className="my-3">
-              4-Star Items
+              【4星物品】
             </p>
             <p className="my-3">
-              For Event Wish "<span className="blue">Adrift</span> in the Harbor": Base probability of winning 4-star item = <span className="orange">5.100%</span>; base probability of winning 4-star character = <span className="orange">2.550%</span>, and base probability of winning 4-star weapon = <span className="orange">2.550%</span>; consolidated probability (incl. guarantee) of winning 4-star item = <span className="orange">13.000%</span>; guaranteed to win 4-star or above item at least once per <span className="orange">10</span> attempts; probability of winning 4-star item through the guarantee = <span className="orange">99.400%</span>, and probability of winning 5-star item through the guarantee = <span className="orange">0.600%</span>. <br />
-              The first time you win a 4-star item in this event wish, there is a <span className="orange">50.000%</span> chance it will be one of the featured characters  <span className="brass">"Chivalric Blossom" Noelle (Geo)</span>, <span className="aqua">"Juvenile Galant" Xingqiu (Hydro)</span>, and <span className="orange">"Exquisite Delicacy" Xiangling (Pyro)</span>. If the first 4-star item you win in this event wish is not one of the featured characters, then the next 4-star item you win is <span className="orange">guaranteed</span> to be a featured character.
+              在本期「<span className="blue">浮生</span>孰来」活动祈愿中，4星物品祈愿的基础概率为<span className="orange">5.100%</span>，4星角色祈愿的基础概率为<span className="orange">2.550%</span>，4星武器祈愿的基础概率为<span className="orange">2.550%</span>，4星物品祈愿的综合概率（含保底）为<span className="orange">13.000%</span>。最多<span className="orange">10</span>次祈愿必定能通过保底获取4星或以上物品，通过保底获取4星物品的概率为<span className="orange">99.400%</span>，获取5星物品的概率为<span className="orange">0.600%</span>。<br />
+              当祈愿获取到4星物品时，有<span className="orange">50.000%</span>的概率为本期4星UP角色<span className="brass">「未授勋之花·诺艾尔(岩)」</span>、<span className="aqua">「少年春衫薄·行秋(水)」</span>、<span className="orange">「万民百味·香菱(火)」</span>中的一个。如果本次祈愿获取的4星物品非本期4星UP角色，下次祈愿获取的4星物品<span className="orange">必定</span>为本期4星UP角色。
             </p>
             <p className="my-3">
-              4-star weapons won in this wish come with <span className="orange">Masterless Starglitter</span> ×2; 3-star weapons won in this wish come with <span className="purple">Masterless Stardust</span> ×15.
+              获得4星武器时，会同时获得2个<span className="orange">无主的星辉</span>作为副产物；获得3星武器时，会同时获得15个<span className="purple">无主的星尘</span>作为副产物。
             </p>
             <p className="my-3">
-              〓Duplicate Characters〓
+              〓若获得重复角色〓
             </p>
             <p className="my-3">
-              On obtaining a 5-star character that you already own (whether obtained in a wish, redeemed at the shop, or awarded by the game): The 2nd – 7th time you obtain the character, it will be converted into <span className="purple">that character's Stella Fortuna</span> ×1 and <span className="orange">Masterless Starglitter</span> ×10; from the 8th time onwards it will be converted into <span className="orange">Masterless Starglitter</span> ×25.
+             无论通过何种方式（包含但不限于祈愿、商城兑换、系统赠送等）第2~7次获得相同5星角色时，每次将转化为1个<span className="purple">对应角色的命星</span>和10个<span className="orange">无主的星辉</span>；第8次及之后获得，将仅转化为25个<span className="orange">无主的星辉</span>。
             </p>
             <p className="my-3">
-              On obtaining a 4-star character that you already own (whether obtained in a wish, redeemed at the shop, or awarded by the game): The 2nd – 7th time you obtain the character, it will be converted into <span className="purple">that character's Stella Fortuna</span> ×1 and <span className="orange">Masterless Starglitter</span> ×2; from the 8th time onwards it will be converted into <span className="orange">Masterless Starglitter</span> ×5.
+              无论通过何种方式（包含但不限于祈愿、商城兑换、系统赠送等）第2~7次获得相同4星角色时，每次将转化为1个<span className="purple">对应角色的命星</span>和2个<span className="orange">无主的星辉</span>；第8次及之后获得，将仅转化为5个<span className="orange">无主的星辉</span>。
             </p>
-            <p className="my-3">
-              ※ This is a character event wish. The wish guarantee count is accumulated within character event wishes only and is independent of the guarantee counts of other types of wishes.
+            <p className="my-3">         ※本祈愿属于角色活动祈愿，其祈愿次数保底会一直累计在角色活动祈愿中，与其他祈愿的祈愿次数保底相互独立计算，互不影响。
             </p>
             <h4 className="my-3 brass">
-              Items to wish for:
+              〓祈愿物品清单〓
             </h4>
           </Col>
         </Row>
         <StarsBar
           starCount={5}
-          content="Base Probability for 5-Star Item Drops: 0.600% (Incl. guarantee: 1.600%)"
+          content="5星物品基础概率：0.600%(含保底综合出率：1.600%)"
           bgColor="#dcbba5"
         />
         <Table
@@ -114,7 +117,7 @@ export default function AdriftInTheHarborDetails() {
         />
         <StarsBar
           starCount={4}
-          content="Base Probability for 4-Star Item Drops: 5.100% (Incl. guarantee: 13.000%)"
+          content="4星物品基础概率：5.100%(含保底综合出率：13.000%)"
           bgColor="#b6abbf"
         />
         <Table
@@ -122,7 +125,7 @@ export default function AdriftInTheHarborDetails() {
         />
         <StarsBar
           starCount={3}
-          content="Base Probability for 3-Star Item Drops: 94.300% (Incl. guarantee: 85.400%)"
+          content="3星物品基础概率：94.300%(含保底综合出率：85.400%)"
           bgColor="#a5bacc"
         />
         <Table
