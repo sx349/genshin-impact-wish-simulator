@@ -9,7 +9,7 @@ const weaponDetailsThumbs = require.context('../../assets/images/weapons')
 const backgroundElements = require.context('../../assets/images/details/character-icons')
 
 export default function IconView(props) {
-  const { name, type, rating, src, quantity } = props.item
+  const { name, alias, type, rating, src, quantity } = props.item
   const backgroundStyle = type === 'weapon'
     ? {
       backgroundImage: `url('${weaponBackground}')`
@@ -40,7 +40,7 @@ export default function IconView(props) {
               />
               </Col>
             <Col xs='12' className="d-flex justify-content-center align-items-center mt-2">
-              {name}
+              {alias}
             </Col>
             </Row>
           </Col>

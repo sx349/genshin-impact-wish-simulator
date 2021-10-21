@@ -9,24 +9,24 @@ export default class Settings extends Component {
       language: 'English'
     }
     this.banners = {
-      'ballad-in-goblets': 'Ballad In Goblets',
-      'sparkling-steps': 'Sparkling Steps',
-      'gentry-of-hermitage': 'Gentry Of Hermitage',
-      'farewell-of-snezhnaya': 'Farewell of Snezhnaya',
-      'secretum-secretorum': 'Secretum Secretorum',
-      'adrift-in-the-harbor': 'Adrift in the Harbor',
-      'invitation-to-mundane-life': 'Invitation to Mundane Life',
-      'dance-of-lanterns': 'Dance Of Lanterns',
-      'moment-of-bloom': 'Moment Of Bloom',
-      'ballad-in-goblets-2': 'Ballad in Goblets 2',
-      'farewell-of-snezhnaya-2': 'Farewell of Snezhnaya 2',
-      'gentry-of-hermitage-2': 'Gentry of Hermitage 2',
-      'born-of-ocean-swell': 'Born of Ocean Swell',
-      'sparkling-steps-2': 'Sparkling Steps 2',
-      'leaves-in-the-wind': 'Leaves in the Wind',
-      'the-herons-court': 'The Herons Court',
-      'tapestry-of-golden-flames': 'Tapestry of Golden Flames',
-      'reign-of-serenity': 'Reign of Serenity',
+      'ballad-in-goblets': 'v1.0 杯装之诗',
+      'sparkling-steps': 'v1.0 闪焰的驻足',
+      'gentry-of-hermitage': 'v1.1 陵薮市朝',
+      'farewell-of-snezhnaya': 'v1.1 暂别冬都',
+      'secretum-secretorum': 'v1.2 深秘之息',
+      'adrift-in-the-harbor': 'v1.2 浮生孰来',
+      'invitation-to-mundane-life': 'v1.3 烟火之邀',
+      'dance-of-lanterns': 'v1.3 鱼龙灯昼',
+      'moment-of-bloom': 'v1.3 赤团开时',
+      'ballad-in-goblets-2': 'v1.4 杯装之诗',
+      'farewell-of-snezhnaya-2': 'v1.4 暂别冬都',
+      'gentry-of-hermitage-2': 'v1.5 陵薮市朝',
+      'born-of-ocean-swell': 'v1.5 浪涌之瞬',
+      'sparkling-steps-2': 'v1.6 闪焰的驻足',
+      'leaves-in-the-wind': 'v1.6 叶落风随',
+      'the-herons-court': 'v2.0 白鹭之庭',
+      'tapestry-of-golden-flames': 'v2.0 焰色天河',
+      'reign-of-serenity': 'v2.1 影寂天下人',
     }
     this.onChange = this.onChange.bind(this)
   }
@@ -75,7 +75,7 @@ export default class Settings extends Component {
             <div
               onClick={closeSettings}
               className="close-button"></div>
-            <h2>Settings</h2>
+            <h2>设置</h2>
             <Form
             onSubmit={this.submitChanges.bind(this)}
             >
@@ -83,7 +83,7 @@ export default class Settings extends Component {
                 <Row>
                   <Col xs="12">
                     <FormGroup className="text-left">
-                      <Label for="characterBanner" className="pb-1 pl-1 h5">Character Banner</Label>
+                      <Label for="characterBanner" className="pb-1 pl-1 h5">角色活动祈愿池选择：</Label>
                       <Input
                         type="select"
                         name="characterBanner"
@@ -104,8 +104,8 @@ export default class Settings extends Component {
                           reset()
                           closeSettings()
                       }}
-                      type="button">Reset Inventory</button>
-                      <button>Apply Changes</button>
+                      type="button">重置祈愿记录（慎选！）</button>
+                      <button>确认选择</button>
                     </div>
                   </Col>
                 </Row>

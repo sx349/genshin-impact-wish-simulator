@@ -13,10 +13,10 @@ export default class Banners extends Component {
       selectedBanner: 'beginners-wish',
       selectedCharacterEventWish,
       banners: {
-        'beginners-wish': 'Novice Wishes',
-        [selectedCharacterEventWish]: 'Character Event Wish',
-        'epitome-invocation': 'Weapon Event Wish',
-        'wanderlust-invocation': 'Standard Wish'
+        'beginners-wish': '新手祈愿',
+        [selectedCharacterEventWish]: '角色活动祈愿',
+        'epitome-invocation': '武器活动祈愿',
+        'wanderlust-invocation': '常驻祈愿'
       },
       wishes: {
         'beginners-wish': 'beginnersWish',
@@ -47,7 +47,7 @@ export default class Banners extends Component {
       const wishes = {}
       for(const b in oldBanners) {
         if(selectedCharacterEventWish === b) {
-          banners[newSelectedCharacterEventWish] = 'Character Event Wish'
+          banners[newSelectedCharacterEventWish] = '角色活动祈愿'
         } else {
           banners[b] = oldBanners[b]
         }
@@ -96,9 +96,9 @@ export default class Banners extends Component {
       this.setState({
         selectedBanner: this.props.getFormattedCharacterEventWish('kebabCase'),
         banners: {
-          [this.props.getFormattedCharacterEventWish('kebabCase')]: 'Character Event Wish',
-          'epitome-invocation': 'Weapon Event Wish',
-          'wanderlust-invocation': 'Standard Wish'
+          [this.props.getFormattedCharacterEventWish('kebabCase')]: '角色活动祈愿',
+          'epitome-invocation': '武器活动祈愿',
+          'wanderlust-invocation': '常驻祈愿'
         },
         wishes: {
           [this.props.getFormattedCharacterEventWish('kebabCase')]: this.props.getFormattedCharacterEventWish('camelCase'),
@@ -110,10 +110,10 @@ export default class Banners extends Component {
     } else {
       this.setState({
         banners: {
-          'beginners-wish': 'Novice Wishes',
-          [this.props.getFormattedCharacterEventWish('kebabCase')]: 'Character Event Wish',
-          'epitome-invocation': 'Weapon Event Wish',
-          'wanderlust-invocation': 'Standard Wish'
+          'beginners-wish': '新手祈愿',
+          [this.props.getFormattedCharacterEventWish('kebabCase')]: '角色活动祈愿',
+          'epitome-invocation': '武器活动祈愿',
+          'wanderlust-invocation': '常驻祈愿'
         },
         wishes: {
           'beginners-wish': 'beginnersWish',
@@ -198,7 +198,7 @@ export default class Banners extends Component {
                     return (
                       <div key={banner} className={`banner-slide ${banner}`}>
                         <div
-                        title={`Your wish counter, you have wished ${userWishes[banner]} times`}
+                        title={`你已在该祈愿池祈愿${userWishes[banner]}次`}
                         className="wish-counter">{userWishes[banner]}</div>
                         <img src={banners(`./${banner}.png`).default} />
                       </div>
@@ -211,13 +211,13 @@ export default class Banners extends Component {
               <div className="button-container">
                 <button
                   onClick={() => this.toggleSettingsModal(true)}
-                >Settings</button>
+                >设置</button>
                 <button
                   onClick={() => setView('details')}
-                >Details</button>
+                >详情</button>
                 <button
                   onClick={() => setView('inventory')}
-                >Inventory</button>
+                >祈愿记录</button>
               </div>
               <div className="wish-container d-flex justify-content-center">
                 <div
@@ -225,7 +225,7 @@ export default class Banners extends Component {
                     wish(this.state.wishes[selectedBanner], true)
                   }}
                   className="wish-button"
-                >Wish</div>
+                >祈愿1次</div>
                 <div
                   className={`wish-button ${selectedBanner === 'beginners-wish' && isBeginnersWishOver10 && 'disabled'}`}
                   onClick={() => {
@@ -233,7 +233,7 @@ export default class Banners extends Component {
                     wish(this.state.wishes[selectedBanner])
                   }}
                 >
-                  Wish x10
+                  祈愿10次
               </div>
               </div>
             </div>

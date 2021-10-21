@@ -10,30 +10,31 @@ export default function Modal(props) {
       >
         <div className="disclaimer-modal-content p-2">
           <div onClick={hideModal} className="close-button"></div>
-          <h2>Disclaimer</h2>
+          <h2>作者声明</h2>
+		  <p>
+		    原作者@uzair-ashraf
+			</p>
           <p>
-            I am not affiliated with Mihoyo, all assets in this application were
-            taken from third party websites and some screenshotted from the game
-            itself.
+          本人与米哈游无利益关系，本项目全部资料均来自第三方网站或游戏内截图。
           </p>
           <p>
-            If you are someone from Mihoyo and would like this website taken
-            down please email me <a href="mailto:uzinatorcl@gmail.com">here</a>{" "}
-            and I shall do so.
+            若米哈游或其利益相关方希望中止本项目，请<a href="mailto:uzinatorcl@gmail.com">邮件联系</a>我，我将立刻下线项目。
           </p>
           <p>
-            The source code is available{" "}
+            本项目源代码均存储在
             <a
               href="https://github.com/uzair-ashraf/genshin-impact-wish-simulator"
               target="_blank"
             >
-              here
+              这里
             </a>
-            , please give it a star if you like it!
+			，若你喜欢本项目，请给本项目加一个颗星！
+			</p>
+          <p>
+          （译注：或者点击下面的图标给原作者买杯咖啡！）
           </p>
           <p>
-            All product names, logos, and brands are property of their
-            respective owners in the United States and/or other countries.
+            所有商品名称、图标和商标的知识产权均归属于其在美国和/或其它国家的相应知识产权所属方。
           </p>
           <a href="https://ko-fi.com/A0A569N3L" target="_blank">
             <img
@@ -45,6 +46,15 @@ export default function Modal(props) {
               alt="Buy Me a Coffee at ko-fi.com"
             />
           </a>
+		  <p>
+		  中文翻译@sx349
+		  </p>
+          <p>
+          本人独立完成了本项目的中文翻译工作，与米哈游、原作者均无利益关系。
+		  </p>
+          <p>
+          若米哈游或其利益相关方希望中止本项目，请<a href="mailto:wssx349@gmail.com">邮件联系</a>我，我将立刻下线项目。
+		  </p>
         </div>
       </div>
     </div>

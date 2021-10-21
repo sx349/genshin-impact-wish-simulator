@@ -6,7 +6,7 @@ const weaponImages = require.context('../assets/images/weapons');
 const characterIcons = require.context('../assets/images/details/character-icons');
 export default function WishItemSingle(props) {
   const { isNewItem } = props
-  const {src, name, rating, type} = props.item
+  const {src, name, alias, rating, type} = props.item
   const isCharacter = type === 'character'
   const backgroundImage = `url('${isCharacter ? characterImages('./' + src).default : weaponImages('./' + src).default}')`
   return (
@@ -18,7 +18,7 @@ export default function WishItemSingle(props) {
         className="wish-item-single-container h-100 p-2"
         >
         {
-          isNewItem && <span className="new-badge">New</span>
+          isNewItem && <span className="new-badge">新</span>
         }
           <Col
             className="h-100 d-flex flex-column justify-content-center align-items-center wish-item-single-content"
@@ -29,7 +29,7 @@ export default function WishItemSingle(props) {
             md="3"
             >
             <div
-              className="text-center text-wrap pb-1">{name}</div>
+              className="text-center text-wrap pb-1">{alias}</div>
             <ReactStars
               count={rating}
               size={24}

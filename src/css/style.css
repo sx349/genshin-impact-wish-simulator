@@ -100,6 +100,22 @@ video {
   transition-duration: 500ms;
 }
 
+.banner-slide.beginners-wish {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);	
+}
+
+.banner-slide.wanderlust-invocation {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);	
+}
+
+.carousel.slide {
+	background:rgba(255, 255, 255, 0);
+}
+
 .banner-button:hover {
   cursor: url('../assets/images/ui/cursor.png'), auto;
 }
@@ -240,7 +256,7 @@ video {
 
 .carousel-container {
   position: relative;
-  height: 65vh;
+  height: 67vh;
   margin: 2rem 15rem;
 }
 

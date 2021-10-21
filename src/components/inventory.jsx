@@ -19,12 +19,14 @@ export default class Inventory extends Component {
   onChange({target: {name, value}}) {
     this.setState({[name]: value})
   }
-  calculateAmountSpent(list) {
+  calculateAmountSpent(list,ac) {
     let wishes = list.reduce((acc, curr) => acc + curr.quantity, 0)
-    return `$${((0.0129 * 160) * wishes).toFixed(2)}`
+    return `${((0.1 * 160) * (wishes - ac) + (0.08 * 160) * ac).toFixed(2)}`
   }
   render() {
-    const { backToHome, inventory } = this.props
+	const data = JSON.parse(localStorage.getItem('data'))
+	const attemptsCount = data.beginnersWish.attemptsCount
+    const { backToHome, inventory} = this.props
     const { orderBy, view, showOnly } = this.state
     const inventoryList = Object.values(inventory)
     const sorting = {
@@ -41,7 +43,7 @@ export default class Inventory extends Component {
       threeStars: item => item.rating === 3
     }
     // est cost per primogen, 1600 gems per 10 wishes
-    const amountSpent = this.calculateAmountSpent(inventoryList)
+    const amountSpent = this.calculateAmountSpent(inventoryList,attemptsCount)
     return (
       <>
         <Navbar
@@ -50,7 +52,7 @@ export default class Inventory extends Component {
         <div className="details pt-5 min-vh-100">
           <Container>
             <Title>
-              <h1>| Inventory</h1>
+              <h1>| 祈愿记录</h1>
             </Title>
             <Form
             onSubmit={e => e.preventDefault()}
@@ -58,59 +60,59 @@ export default class Inventory extends Component {
               <Row>
                 <Col xs="6" sm="3">
                   <FormGroup>
-                    <Label for="orderBy">Order By</Label>
+                    <Label for="orderBy">排序方式</Label>
                     <Input
                       type="select"
                       name="orderBy"
                       id="orderBy"
                       onChange={this.onChange}
                     >
-                      <option value="rating">Rating</option>
-                      <option value="name">Name</option>
-                      <option value="quantity">Quantity</option>
+                      <option value="rating">品质</option>
+                      <option value="name">名称</option>
+                      <option value="quantity">数量</option>
                     </Input>
                   </FormGroup>
                 </Col>
                 <Col xs="6" sm="3">
                   <FormGroup>
-                    <Label for="showOnly">Show Only</Label>
+                    <Label for="showOnly">展示范围</Label>
                     <Input
                       type="select"
                       name="showOnly"
                       id="showOnly"
                       onChange={this.onChange}
                     >
-                      <option value="all">All</option>
-                      <option value="characters">Characters</option>
-                      <option value="weapons">Weapons</option>
-                      <option value="fiveStars">5 Stars</option>
-                      <option value="fourStars">4 Stars</option>
-                      <option value="threeStars">3 Stars</option>
+                      <option value="all">全部</option>
+                      <option value="characters">角色</option>
+                      <option value="weapons">武器</option>
+                      <option value="fiveStars">五星</option>
+                      <option value="fourStars">四星</option>
+                      <option value="threeStars">三星</option>
                     </Input>
                   </FormGroup>
                 </Col>
                 <Col xs="6" sm="3">
                   <FormGroup>
-                    <Label for="view">View</Label>
+                    <Label for="view">视图</Label>
                     <Input
                     type="select"
                     name="view"
                     id="view"
                     onChange={this.onChange}
                     >
-                      <option value="listView">List</option>
-                      <option value="iconView">Icons</option>
+                      <option value="listView">列表</option>
+                      <option value="iconView">图标</option>
                     </Input>
                   </FormGroup>
                 </Col>
                 <Col xs="6" sm="3">
                   <FormGroup>
-                    <Label>Spent</Label>
+                    <Label>氪条</Label>
                       <Badge
                         color="warning"
                         className="amount-spent-badge"
                       >
-                        {amountSpent}
+                        ￥{amountSpent}
                       </Badge>
                   </FormGroup>
                 </Col>
@@ -141,7 +143,7 @@ export default class Inventory extends Component {
                 )
                 : (
                   <Col xs='12' className="card p-4 d-flex justify-content-center align-items-center">
-                    <h4 className="text-center mb-5">No Items :(</h4>
+                    <h4 className="text-center mb-5">没有祈愿记录 :( </h4>
                     <img src={sadPaimon} alt="Sad paimon" className="mw-50"/>
                   </Col>
                 )

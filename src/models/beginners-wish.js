@@ -65,6 +65,7 @@ export default class BeginnersWish extends BaseGacha {
   grabANoelle() {
     return {
       name: "Noelle",
+	  alias: "诺艾尔",
       element: "Geo",
       type: "character",
       rating: 4,
